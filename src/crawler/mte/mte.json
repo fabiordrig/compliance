@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "ano": 2016,
+    "estado": "RS",
+    "nome": "Adalberto Braz de Souza",
+    "cpf": "884.400.954-49",
+    "local": "Rod. BR 386, bairro Olarias/Conventos, Lajeado/RS"
+  },
+  {
+    "id": 2,
+    "ano": 2014,
+    "estado": "MG",
+    "nome": "Ademir Andrade de Oliveira",
+    "cpf": "705.704.936-68",
+    "local": "Fazenda Santa Helena/Chácara Vargem Bonita - zona rural, Ibiraci/MG"
+  },
+  {
+    "id": 3,
+    "ano": 2015,
+    "estado": "MG",
+    "nome": "AEV Empreendimentos Imobiliários SPELtda",
+    "cpf": "20.288.137/0001-09",
+    "local": "Obra Residencial American Garden I - Rua Lindolfo de Azevedo"
+  },
+  {
+    "id": 4,
+    "ano": 2014,
+    "estado": "GO",
+    "nome": "Agenor Tibúrcio da Silva",
+    "cpf": "375.056.961-49",
+    "local": "Fazenda Bagre - Região do Marimbondo, zona rural, Caldas Novas/MG"
+  },
+  {
+    "id": 5,
+    "ano": 2014,
+    "estado": "SC",
+    "nome": "Airton Luiz Cobalchini",
+    "cpf": "828.271.339-20",
+    "local": "Viveiro de Mudas e Serraria - Rua Pedro Damo"
+  },
+  {
+    "id": 6,
+    "ano": 2016,
+    "estado": "GO",
+    "nome": "Alex Teixeira de Oliveira Santos",
+    "cpf": "949.176.121-87",
+    "local": "Rua 47, Quadra 116, Lote 3, Jardim Tiradentes, Aparecida de Goiânia/GO"
+  },
+  {
+    "id": 7,
+    "ano": 2014,
+    "estado": "MA",
+    "nome": "Alexandre Vieira Lins",
+    "cpf": "360.426.924-53",
+    "local": "Fazena Sara - Rod. BR 135, km 122, Miranda do Norte/MA"
+  },
+  {
+    "id": 8,
+    "ano": 2014,
+    "estado": "AC",
+    "nome": "Amândio Celestino Cogo",
+    "cpf": "120.299.399-00",
+    "local": "Fazenda Perseverança - Ramal Jorge Kalume, km 16, Rio Branco/AC"
+  },
+  {
+    "id": 9,
+    "ano": 2016,
+    "estado": "PI",
+    "nome": "Ancelmo Gomes Gonçalves",
+    "cpf": "819.832.803-30",
+    "local": "Área de extração de carnaúba - Povoado Areal, zona rural, Santa Cruz do Piauí/PI"
+  }
+]

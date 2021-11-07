@@ -1,4 +1,4 @@
-import { createWriteStream } from 'fs'
+import { createWriteStream, readFileSync} from 'fs'
 import axios, { AxiosResponse } from 'axios'
 import path from 'path'
 
@@ -7,7 +7,7 @@ export class Mte {
   constructor(private readonly url: string) {}
 
 
-  async download(): Promise<Blob> {
+  async download(): Promise<MteRawData> {
 
     const response: AxiosResponse<any> = await axios.get(this.url, {
       responseType: 'stream',
@@ -17,9 +17,16 @@ export class Mte {
 
     response.data.pipe(file)
 
-    return new Promise((resolve, reject) => {
-      file.on('finish', resolve)
-      file.on('error', reject)
-    })
+    const rawdata: any = readFileSync(this.outputFile);
+    return JSON.parse(rawdata);
   }
+}
+
+export type MteRawData = {
+  id: number;
+  ano: number;
+  estado: string;
+  nome: string;
+  cpf: string;
+  local: string;
 }

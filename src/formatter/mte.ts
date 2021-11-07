@@ -1,15 +1,20 @@
-import fs from 'fs'
-import path from 'path'
-
+import { MteRawData } from "../crawler/mte/mte";
 
 export class MteFormatter {
-  private readonly encoding = 'utf-8'
-  readFile() {
-    const filePath = path.resolve(__dirname, '../crawler/mte/mte.pdf')
-    console.log(filePath);
-    const content = fs.readFileSync(filePath, this.encoding);
-    console.log('====================================');
-    console.log(content);
-    console.log('====================================');
+  format(rawData: MteRawData[], identityNumber: string): MteData[] {
+    const formattedData =  rawData.filter((data) => data.cpf === identityNumber).map((raw) => {
+      return {
+        year: raw.ano,
+        location: raw.local,
+      }
+    });
+
+    return formattedData;
   }
+}
+
+
+export type MteData = {
+  year: number;
+  location: string;
 }
